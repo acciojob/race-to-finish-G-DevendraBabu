@@ -53,7 +53,7 @@ function getRandomTime(min, max) {
     return Math.random() * (max - min) + min;
   }
 
-  const promises = [p1,p2,p3,p4,p5];
-  
+//   const promises = [];
+windows.promises=[p1,p2,p3,p4,p5]; 
 let output_div=document.getElementById("output");
 Promise.any(promises).then((value)=>output_div.innerHTML=value);
